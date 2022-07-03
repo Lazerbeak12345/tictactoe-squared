@@ -8,7 +8,7 @@
 	let gameWon = false
 	let movesLeft = 3 * 3 // TODO make dynamic
 	let currentPlayer = 0
-	let currentChar = players[currentPlayer]
+	$: currentChar = players[currentPlayer]
 	let history = []
 
 	function clickHandle(event) {
@@ -17,6 +17,7 @@
 			...history,
 			{ x, y, player: currentChar }
 		]
+		currentPlayer = (currentPlayer + 1) % players.length
 	}
 </script>
 <div class="card-body">
