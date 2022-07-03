@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+-- Code more or less copied from
+-- https://github.com/vitejs/vite/blob/main/packages/create-vite/template-svelte
+-->
+<!-- TODO use pug? Or is that too cursed, as .svelte files might not support
+-- that? -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- TODO icon -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic-Tac-Toe²</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="module">
+			// import './app.css'
+			import App from './App.svelte'
+			const app = new App({
+				target: document.getElementById('app')
+			})
+
+			// export default app
+		</script>
+	</body>
+</html>

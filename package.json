@@ -11,8 +11,10 @@
   "author": "Lazerbeak12345",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/config-default": "^2.6.2",
     "@parcel/core": "^2.6.2",
     "parcel": "^2.6.2",
-    "parcel-transformer-svelte": "^1.2.3"
+    "parcel-transformer-svelte": "^1.2.3",
+    "svelte": "^3.48.0"
   }
 }

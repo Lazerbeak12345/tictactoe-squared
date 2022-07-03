@@ -1,14 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@parcel/config-default': ^2.6.2
   '@parcel/core': ^2.6.2
   parcel: ^2.6.2
   parcel-transformer-svelte: ^1.2.3
+  svelte: ^3.48.0
 
 devDependencies:
+  '@parcel/config-default': 2.6.2_@parcel+core@2.6.2
   '@parcel/core': 2.6.2
   parcel: 2.6.2
   parcel-transformer-svelte: 1.2.3_@parcel+core@2.6.2
+  svelte: 3.48.0
 
 packages:
 
@@ -877,6 +881,18 @@ packages:
       - '@parcel/core'
     dev: true
 
+  /@parcel/types/2.6.2:
+    resolution: {integrity: sha512-MV8BFpCIs2jMUvK2RHqzkoiuOQ//JIbrD1zocA2YRW3zuPL/iABvbAABJoXpoPCKikVWOoCWASgBfWQo26VvJQ==}
+    dependencies:
+      '@parcel/cache': 2.6.2_@parcel+core@2.6.2
+      '@parcel/diagnostic': 2.6.2
+      '@parcel/fs': 2.6.2_@parcel+core@2.6.2
+      '@parcel/package-manager': 2.6.2_@parcel+core@2.6.2
+      '@parcel/source-map': 2.0.5
+      '@parcel/workers': 2.6.2_@parcel+core@2.6.2
+      utility-types: 3.10.0
+    dev: true
+
   /@parcel/types/2.6.2_@parcel+core@2.6.2:
     resolution: {integrity: sha512-MV8BFpCIs2jMUvK2RHqzkoiuOQ//JIbrD1zocA2YRW3zuPL/iABvbAABJoXpoPCKikVWOoCWASgBfWQo26VvJQ==}
     dependencies:
@@ -922,7 +938,7 @@ packages:
       '@parcel/core': 2.6.2
       '@parcel/diagnostic': 2.6.2
       '@parcel/logger': 2.6.2
-      '@parcel/types': 2.6.2_@parcel+core@2.6.2
+      '@parcel/types': 2.6.2
       '@parcel/utils': 2.6.2
       chrome-trace-event: 1.0.3
       nullthrows: 1.1.1
