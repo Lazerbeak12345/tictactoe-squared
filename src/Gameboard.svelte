@@ -1,6 +1,5 @@
 <script>
 	import Game from './Game.svelte'
-	import Alert from './Alert.svelte'
 	import Button from './Button.svelte'
 
 	let settings = true
