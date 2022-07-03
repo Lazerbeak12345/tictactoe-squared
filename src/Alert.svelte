@@ -3,5 +3,5 @@
 	export let colorClass;
 </script>
 <div class="alert {colorClass}">
-	{body}
+	<slot/>
 </div>

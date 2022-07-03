@@ -1,6 +1,11 @@
 <script>
 	import CellRow from './CellRow.svelte'
+	export let state = [
+		"...",
+		"...",
+		"...",
+	]
 </script>
-<CellRow/>
-<CellRow/>
-<CellRow/>
+{#each state as row}
+	<CellRow state={row}/>
+{/each}

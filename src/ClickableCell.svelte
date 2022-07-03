@@ -1,16 +1,11 @@
+<script>
+	import Button from './Button.svelte'
+	export let disabled = false
+</script>
 <!-- TODO
 - States
  - Disabled
 -->
-<script>
-	let number // TODO this needs to be an input
-</script>
-<button class="btn col btn-primary m-1">
-	{#if number === 1}
-		X
-	{:else if number === 2}
-		O
-	{:else}
-		&nbsp;
-	{/if}
-</button>
+<Button classes="col m-1" {disabled}>
+	<slot>&nbsp;</slot>
+</Button>
