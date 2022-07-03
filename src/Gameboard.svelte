@@ -1,23 +1,22 @@
 <script>
 	import Game from './Game.svelte'
 	import Alert from './Alert.svelte'
-	import MovesHistory from './MovesHistory.svelte'
 	import Button from './Button.svelte'
 
 	let settings = true
-	let currentPlayer = 'X'
 	let state = [
 		"   ",
 		"   ",
 		"   "
 	]
+	let players = "XO"
 </script>
 <div class="card">
 	{#if settings}
 		<div class="card-body">
 			<ul>
 				<li>3 x 3 grid</li>
-				<li>2 Player</li>
+				<li>2 Player, X and O</li>
 				<li>X goes first</li>
 			</ul>
 		</div>
@@ -30,6 +29,6 @@
 			</Button>
 		</div>
 	{:else}
-		<Game {state}/>
+		<Game {state} {players}/>
 	{/if}
 </div>

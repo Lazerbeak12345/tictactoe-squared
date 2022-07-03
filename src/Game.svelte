@@ -3,16 +3,18 @@
 	import MovesHistory from './MovesHistory.svelte'
 
 	export let state
+	export let players
 
 	let gameWon = false
 	let movesLeft = 3 * 3 // TODO make dynamic
-	let currentPlayer = 'X'
+	let currentPlayer = 0
+	let currentChar = players[currentPlayer]
 </script>
 <div class="card-body">
-	<h4>Player {currentPlayer}'s turn</h4>
+	<h4>Player {currentChar}'s turn</h4>
 	{#if gameWon}
 		<Alert colorClass="alert-success">
-			Player {currentPlayer} won!
+			Player {currentChar} won!
 		</Alert>
 	{/if}
 	{#if movesLeft === 0}
