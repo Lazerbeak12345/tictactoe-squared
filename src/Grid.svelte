@@ -5,7 +5,8 @@
 		"...",
 		"...",
 	]
+	export let disabled = false
 </script>
 {#each state as row}
-	<CellRow state={row}/>
+	<CellRow state={row} {disabled}/>
 {/each}

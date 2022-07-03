@@ -1,5 +1,5 @@
 <script>
-	import SmallGrid from './SmallGrid.svelte'
+	import Grid from './Grid.svelte'
 	import MovesHistory from './MovesHistory.svelte'
 
 	export let state
@@ -22,7 +22,7 @@
 			No moves left!
 		</Alert>
 	{/if}
-	<SmallGrid {state}/>
+	<Grid {state} disabled={gameWon}/>
 </div>
 <div class="card-footer">
 	<MovesHistory/>
