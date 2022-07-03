@@ -9,6 +9,7 @@
 		"   ",
 		"   "
 	]
+	let maxMoves = 9
 	let players = "XO"
 </script>
 <div class="card">
@@ -29,6 +30,6 @@
 			</Button>
 		</div>
 	{:else}
-		<Game {state} {players}/>
+		<Game {state} {players} {maxMoves}/>
 	{/if}
 </div>

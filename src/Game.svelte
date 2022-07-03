@@ -1,12 +1,14 @@
 <script>
 	import Grid from './Grid.svelte'
 	import MovesHistory from './MovesHistory.svelte'
+	import Alert from './Alert.svelte'
 
 	export let state
+	export let maxMoves
 	export let players
 
 	let gameWon = false
-	let movesLeft = 3 * 3 // TODO make dynamic
+	let movesLeft = maxMoves
 	let currentPlayer = 0
 	$: currentChar = players[currentPlayer]
 	let history = []
@@ -18,6 +20,7 @@
 			{ x, y, player: currentChar }
 		]
 		currentPlayer = (currentPlayer + 1) % players.length
+		movesLeft = movesLeft - 1
 	}
 </script>
 <div class="card-body">
