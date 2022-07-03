@@ -9,5 +9,10 @@
   },
   "keywords": [],
   "author": "Lazerbeak12345",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/core": "^2.6.2",
+    "parcel": "^2.6.2",
+    "parcel-transformer-svelte": "^1.2.3"
+  }
 }
