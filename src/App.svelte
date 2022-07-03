@@ -1,4 +1,13 @@
-<h1>Hello world!</h1>
 <script>
-	console.log("help i'm stuck in a box and can't get out!")
+	import Navbar from './Navbar.svelte'
+	import Gameboard from './Gameboard.svelte'
 </script>
+<Navbar/>
+<div class="container-sm">
+	<div class="row justify-content-center">
+		<div class="col-md-6">
+			<Gameboard/>
+		</div>
+	</div>
+</div>
+<div>scoreboard</div>
