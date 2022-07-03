@@ -1,19 +1,17 @@
 <script>
 	import ClickableCell from './ClickableCell.svelte'
 	export let state = [
-		"...",
-		"...",
-		"...",
+		"   ",
+		"   ",
+		"   ",
 	]
 	export let disabled = false
 </script>
 {#each state as row}
 	<div class="row">
 		{#each row as cell}
-			{#if disabled || cell === "."}
-				<ClickableCell disabled/>
-			{:else if cell === " "}
-				<ClickableCell/>
+			{#if cell === " "}
+				<ClickableCell {disabled}/>
 			{:else}
 				<ClickableCell disabled>
 					{cell}
