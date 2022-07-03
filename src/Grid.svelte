@@ -6,12 +6,18 @@
 {#each state as row}
 	<div class="row">
 		{#each row as cell}
-			{#if cell === " "}
-				<ClickableCell {disabled}/>
+			{#if typeof cell === "string"}
+				{#if cell === " "}
+					<ClickableCell {disabled}/>
+				{:else}
+					<ClickableCell disabled>
+						{cell}
+					</ClickableCell>
+				{/if}
 			{:else}
-				<ClickableCell disabled>
-					{cell}
-				</ClickableCell>
+				<div class="col border">
+					<svelte:self state={cell} {disabled}/>
+				</div>
 			{/if}
 		{/each}
 	</div>

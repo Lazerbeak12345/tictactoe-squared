@@ -5,7 +5,7 @@
 <Navbar/>
 <div class="container-sm">
 	<div class="row justify-content-center">
-		<div class="col-md-6">
+		<div class="col">
 			<Gameboard/>
 		</div>
 	</div>
