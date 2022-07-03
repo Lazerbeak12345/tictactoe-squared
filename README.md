@@ -50,7 +50,8 @@ No bugs so far 😈.
 > Anakin: Is it possible to learn this power?
 > Palpatine: Not from a Jedi.
 > ](https://i.kym-cdn.com/photos/images/original/001/491/587/0c5.png)
-> \- Anakin and Chancellor Palpatine in _Star Wars, Revenge of the Sith_
+>
+> - Anakin and Chancellor Palpatine in _Star Wars, Revenge of the Sith_
 >
 > Script source imsdb.com, image source KnowYourMeme
 
