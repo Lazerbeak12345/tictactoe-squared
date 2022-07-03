@@ -10,7 +10,7 @@ Now I'm going to assume you know of Ultimate Tic-Tac-Toe. Imagine one such board
 
 In each square of the Ultimate Tic-Tac-Toe board, place a standard Tic-Tac-Toe
 board.
-**That is to say, this is Tic-Tac-Toe inside of Tic-Tac-Toe inside of
+That is to say, **this is Tic-Tac-Toe inside of Tic-Tac-Toe inside of
 Tic-Tac-Toe.**
 
 Add a bit of rule balancing, and there you go.
