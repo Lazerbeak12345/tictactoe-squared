@@ -1,10 +1,6 @@
 <script>
 	import ClickableCell from './ClickableCell.svelte'
-	export let state = [
-		"   ",
-		"   ",
-		"   ",
-	]
+	export let state
 	export let disabled = false
 </script>
 {#each state as row}
