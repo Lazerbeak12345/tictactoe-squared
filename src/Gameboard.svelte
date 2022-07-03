@@ -1,19 +1,16 @@
 <script>
-	import SmallGrid from './SmallGrid.svelte'
+	import Game from './Game.svelte'
 	import Alert from './Alert.svelte'
 	import MovesHistory from './MovesHistory.svelte'
 	import Button from './Button.svelte'
 
 	let settings = true
-
 	let currentPlayer = 'X'
-	let gameWon = false
 	let state = [
 		"   ",
 		"   ",
 		"   "
 	]
-	let movesLeft = 3 * 3 // TODO make dynamic
 </script>
 <div class="card">
 	{#if settings}
@@ -33,22 +30,6 @@
 			</Button>
 		</div>
 	{:else}
-		<div class="card-body">
-			<h4>Player {currentPlayer}'s turn</h4>
-			{#if gameWon}
-				<Alert colorClass="alert-success">
-					Player {currentPlayer} won!
-				</Alert>
-			{/if}
-			{#if movesLeft === 0}
-				<Alert colorClass="alert-danger">
-					No moves left!
-				</Alert>
-			{/if}
-			<SmallGrid {state}/>
-		</div>
-		<div class="card-footer">
-			<MovesHistory/>
-		</div>
+		<Game {state}/>
 	{/if}
 </div>
