@@ -1,14 +1,38 @@
 <script>
+	import { createEventDispatcher } from 'svelte';
 	import ClickableCell from './ClickableCell.svelte'
+
+	const dispatch = createEventDispatcher();
+
 	export let state
 	export let disabled = false
+	export let currentChar
+
+	function handleClick(x,y) {
+		dispatch('click', { x, y })
+		console.group("click", x, y)
+		console.log("before",state)
+		state = [
+			...state.slice(0, y),
+			[
+				...state[y].slice(0, x),
+				currentChar,
+				...state[y].slice(x+1)
+			],
+			...state.slice(y+1)
+		]
+		console.log("after",state)
+	}
 </script>
 {#each state as row, y}
 	<div class="row">
 		{#each row as cell, x }
 			{#if typeof cell === "string"}
 				{#if cell === " "}
-					<ClickableCell {disabled}/>
+					<ClickableCell
+						{disabled}
+						on:click={()=>handleClick(x,y)}
+					/>
 				{:else}
 					<ClickableCell disabled>
 						{cell}
@@ -34,7 +58,7 @@
 						: ""
 					}"
 				>
-					<svelte:self state={cell} {disabled}/>
+					<svelte:self state={cell} {disabled} on:click/>
 				</div>
 			{/if}
 		{/each}
