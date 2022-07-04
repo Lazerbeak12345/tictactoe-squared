@@ -3,12 +3,15 @@
 	import Button from './Button.svelte'
 
 	let settings = true
-	let state = [
-		"   ",
-		"   ",
-		"   "
-	]
-	let maxMoves = 9
+	let w = 3
+	let h = 3
+	let state = new Array(h)
+		.fill(0)
+		.map(() => new Array(w)
+			.fill(0)
+			.map(() => " "))
+	console.log(state)
+	let maxMoves = w * h
 	let players = "XO"
 </script>
 <div class="card">
