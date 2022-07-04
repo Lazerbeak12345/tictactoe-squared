@@ -1,6 +1,7 @@
 <script>
 	import Game from './Game.svelte'
 	import Button from './Button.svelte'
+	import IntInput from './IntInput.svelte'
 
 	let settings = true
 	let w = 3
@@ -22,32 +23,22 @@
 			</label>
 			<div class="input-group">
 				<span class="input-group-text" id="w">Width</span>
-				<input
-					type="number"
-					step="1"
-					class="form-control"
-					aria-describedby="w"
+				<IntInput
+					ariaDescribedby="w"
 					value="3"
-					on:change={e => w = parseInt(e.target.value)}>
+					on:change={e => w = parseInt(e.target.value)}/>
 				<span class="input-group-text" id="h">Height</span>
-				<input
-					type="number"
-					step="1"
-					class="form-control"
+				<IntInput
 					aria-describedby="h"
 					value="3"
-					on:change={e => h = parseInt(e.target.value)}>
+					on:change={e => h = parseInt(e.target.value)}/>
 			</div>
 			<label class="form-label">
 				Number in a row to win
 			</label>
-			<input
-				type="number"
-				step="1"
-				class="form-control"
-				aria-describedby="h"
+			<IntInput
 				value="3"
-				on:change={e => win = parseInt(e.target.value)}>
+				on:change={e => win = parseInt(e.target.value)}/>
 			<ul>
 				<li>2 Player, X and O</li>
 				<li>X goes first</li>
