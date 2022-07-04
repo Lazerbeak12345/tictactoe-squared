@@ -5,6 +5,7 @@
 	let settings = true
 	let w = 3
 	let h = 3
+	let win = 3
 	$: state = new Array(h)
 		.fill(0)
 		.map(() => new Array(w)
@@ -16,7 +17,7 @@
 <div class="card">
 	{#if settings}
 		<div class="card-body">
-			<label for="basic-url" class="form-label">
+			<label class="form-label">
 				Size
 			</label>
 			<div class="input-group">
@@ -37,6 +38,16 @@
 					value="3"
 					on:change={e => h = parseInt(e.target.value)}>
 			</div>
+			<label class="form-label">
+				Number in a row to win
+			</label>
+			<input
+				type="number"
+				step="1"
+				class="form-control"
+				aria-describedby="h"
+				value="3"
+				on:change={e => win = parseInt(e.target.value)}>
 			<ul>
 				<li>2 Player, X and O</li>
 				<li>X goes first</li>
