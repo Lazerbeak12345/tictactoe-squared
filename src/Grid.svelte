@@ -22,6 +22,7 @@
 			...state.slice(y+1)
 		]
 		console.log("after",state)
+		console.groupEnd("click")
 	}
 </script>
 {#each state as row, y}
