@@ -10,7 +10,7 @@
 
 	function handleClick(x,y) {
 		dispatch('click', { x, y })
-		console.group("click", x, y)
+		console.group("click", x, y, currentChar)
 		console.log("before",state)
 		state = [
 			...state.slice(0, y),
@@ -59,7 +59,7 @@
 						: ""
 					}"
 				>
-					<svelte:self state={cell} {disabled} on:click/>
+					<svelte:self state={cell} {disabled} on:click {currentChar}/>
 				</div>
 			{/if}
 		{/each}
