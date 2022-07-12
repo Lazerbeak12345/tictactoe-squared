@@ -10,6 +10,11 @@
   "keywords": [],
   "author": "Lazerbeak12345",
   "license": "MIT",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
   "devDependencies": {
     "@parcel/config-default": "^2.6.2",
     "@parcel/core": "^2.6.2",
