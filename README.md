@@ -57,7 +57,7 @@ No bugs so far 😈.
 >
 > \- Anakin and Chancellor Palpatine in _Star Wars, Revenge of the Sith_
 >
-> Script source imsdb.com, image source KnowYourMeme
+> Script source for this meme imsdb.com, image source KnowYourMeme
 
 Parcel is told how to ~~ab~~use a svelte project via
 `parcel-transformer-svelte`.
