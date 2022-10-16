@@ -1,7 +1,8 @@
 <script>
+	import { Alert } from 'sveltestrap';
+
 	import Grid from './Grid.svelte'
 	import MovesHistory from './MovesHistory.svelte'
-	import Alert from './Alert.svelte'
 
 	export let state
 	export let maxMoves
@@ -26,12 +27,12 @@
 <div class="card-body">
 	<h4>Player {currentChar}'s turn</h4>
 	{#if gameWon}
-		<Alert colorClass="alert-success">
+		<Alert color="success">
 			Player {currentChar} won!
 		</Alert>
 	{/if}
 	{#if movesLeft === 0}
-		<Alert colorClass="alert-danger">
+		<Alert color="danger">
 			No moves left!
 		</Alert>
 	{/if}

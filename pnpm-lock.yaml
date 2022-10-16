@@ -10,18 +10,20 @@ specifiers:
   parcel: ^2.6.2
   parcel-transformer-svelte: ^1.2.3
   svelte: ^3.48.0
+  sveltestrap: ^5.9.0
 
 dependencies:
   '@fortawesome/fontawesome-free': 6.2.0
   '@popperjs/core': 2.11.6
   bootstrap: 5.2.2_@popperjs+core@2.11.6
   bootstrap-dark-5: 1.1.3_@popperjs+core@2.11.6
+  sveltestrap: 5.9.0_svelte@3.48.0
 
 devDependencies:
   '@parcel/config-default': 2.6.2_@parcel+core@2.6.2
   '@parcel/core': 2.6.2
   parcel: 2.6.2
-  parcel-transformer-svelte: 1.2.3_@parcel+core@2.6.2
+  parcel-transformer-svelte: 1.2.3_zl4u27xcordv5nhhu7dt4kqeoe
   svelte: 3.48.0
 
 packages:
@@ -1408,9 +1410,11 @@ packages:
     resolution: {integrity: sha512-knIeYepTI6BDAzGxqFEDGtI/iGqs57H32CInAIxEvAHG46vk1Di0CEpyc1A7iY39B1mfik3g3KLYwOTNnnMHLA==}
     dev: true
 
-  /parcel-transformer-svelte/1.2.3_@parcel+core@2.6.2:
+  /parcel-transformer-svelte/1.2.3_zl4u27xcordv5nhhu7dt4kqeoe:
     resolution: {integrity: sha512-yB0Ng4cYPZJNF3NUySbSvDfQsWPw6tjFwwUExUXd5kJehqZdlussSGGBj6e6jTKdPyIgqrThhx+Um69PFPjTIQ==}
     engines: {node: '>=8', parcel: ^2.0.0}
+    peerDependencies:
+      svelte: ^3.0.0
     dependencies:
       '@parcel/plugin': 2.6.2_@parcel+core@2.6.2
       '@parcel/source-map': 2.0.5
@@ -1572,7 +1576,15 @@ packages:
   /svelte/3.48.0:
     resolution: {integrity: sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ==}
     engines: {node: '>= 8'}
-    dev: true
+
+  /sveltestrap/5.9.0_svelte@3.48.0:
+    resolution: {integrity: sha512-ZSiYKYrKhDMhhbamnAFK3RK/uqUdcLgjae5Fk3GYdv6Ccth0tN2y6vSg+Vp/PBTYc51u08ZwnYvt8SfWSRNCMA==}
+    peerDependencies:
+      svelte: ^3.29.0
+    dependencies:
+      '@popperjs/core': 2.11.6
+      svelte: 3.48.0
+    dev: false
 
   /svgo/2.8.0:
     resolution: {integrity: sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg==}
