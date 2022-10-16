@@ -4,9 +4,6 @@
   "description": "Hopefully an actually viable tictactoe game but in svelte this time....",
   "private": true,
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "browserslist": "defaults",
   "keywords": [],
   "author": "Lazerbeak12345",
@@ -14,7 +11,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.6.2",
