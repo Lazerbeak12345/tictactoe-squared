@@ -18,9 +18,9 @@
 <div class="card">
 	{#if settings}
 		<div class="card-body">
-			<label class="form-label">
+			<p class="form-label">
 				Size
-			</label>
+			</p>
 			<div class="input-group">
 				<span class="input-group-text" id="w">Width</span>
 				<IntInput
@@ -33,9 +33,9 @@
 					value="3"
 					on:change={e => h = parseInt(e.target.value)}/>
 			</div>
-			<label class="form-label">
+			<p class="form-label">
 				Number in a row to win
-			</label>
+			</p>
 			<IntInput
 				value="3"
 				on:change={e => win = parseInt(e.target.value)}/>
