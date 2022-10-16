@@ -40,7 +40,11 @@ full, then they may place everywhere within the next region upwards.
   - Ex: A middle board has been won or filled, and you are restricted to this
   board. You may now place _anywhere in the entire game_.
 
-## Structure
+## Contributing and Development
+
+Uses `pnpm`. I don't remember why anymore. Is it just lighter or something? Probabbly. `npm` is a bit bloated lately and `yarn`'s become overcomplicated.
+
+### Structure
 
 Uses parcel to build a svelte project.
 This allows me to use the best of both toolkits.
