@@ -1,12 +1,15 @@
 <script>
+	import { Button } from 'sveltestrap'
+
 	export let colorClass = "btn-primary"
 	export let classes = ""
 	export let disabled = ""
 </script>
-<button
+<Button
+	color = "primary"
 	class="btn {colorClass} {classes}"
 	{disabled}
 	on:click
 >
 	<slot/>
-</button>
+</Button>
