@@ -1,6 +1,7 @@
 <script>
+	import { Button } from 'sveltestrap'
+
 	import Game from './Game.svelte'
-	import Button from './Button.svelte'
 	import IntInput from './IntInput.svelte'
 
 	let settings = true
