@@ -7,6 +7,6 @@
 	<Button
 		on:click={()=>a = false}
 	>
-		Click me!
+		Click me! I should vanish!
 	</Button>
 {/if}
