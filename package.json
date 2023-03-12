@@ -9,13 +9,13 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "@parcel/config-default": "^2.8.1",
-    "@parcel/core": "^2.8.1",
-    "parcel": "^2.8.1",
+    "@parcel/config-default": "^2.8.3",
+    "@parcel/core": "^2.8.3",
+    "parcel": "^2.8.3",
     "parcel-transformer-svelte": "^1.2.3"
   },
   "dependencies": {
-    "sveltestrap": "^5.10.0",
-    "svelte": "^3.54.0"
+    "svelte": "^3.56.0",
+    "sveltestrap": "^5.10.0"
   }
 }
